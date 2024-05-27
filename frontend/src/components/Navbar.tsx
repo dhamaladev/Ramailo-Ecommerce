@@ -10,7 +10,6 @@ import { setSidebarOpen } from "../redux/features/toggle/toggleSlice.ts";
 
 const Navbar = () => {
   const {isSidebarOpen} = useSelector((state: RootState) => state.toggle)
-  console.log(isSidebarOpen)
   const dispatch = useDispatch()
 
   return (

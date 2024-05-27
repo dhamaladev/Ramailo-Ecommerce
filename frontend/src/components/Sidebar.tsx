@@ -6,12 +6,11 @@ import { Navlinks } from '../utils/Links';
 import { setSidebarClose } from '../redux/features/toggle/toggleSlice';
 
 const Sidebar = () => {
-    const isSidebarOpen = useSelector((state:any) => state.isSidebarOpen)
     const dispatch = useDispatch()
     const closeSidebar = () => dispatch(setSidebarClose())
 
   return (
-    <div className='w-full sm:w-[50%] md:hidden h-full fixed top-0 left-0 bg-slate-700 text-slate-50 p-10'>
+    <div className='w-full sm:w-[50%] md:hidden h-full fixed top-0 left-0 bg-slate-700 text-slate-50 p-10 z-50'>
           <div className='text-center'>
           <h1 className="text-2xl font-semibold">
             <Link to="/">Ramailo Ecommerce</Link>
