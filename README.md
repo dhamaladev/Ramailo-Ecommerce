@@ -33,9 +33,7 @@ On the command prompt run the following commands:
  ```
  ```
  $ python manage.py makemigrations
- $ python manage.py migrate
- $ python manage.py shell
-$ from products.helpers import data_loader (This will populate the data from third party)
+ $ python manage.py migrate (Now whenever is runserver run data gets inserted into the database)
 $ python manage.py runserver (This will run the server and you can look it on http://localhost:8080/)
 
  ```

@@ -14,3 +14,16 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerce.settings')
 
 application = get_wsgi_application()
+
+# wsgi.py or asgi.py
+import os
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
+
+application = get_wsgi_application()
+
+# Load data from third-party API
+from products.helpers import data_loader
+data_loader()
+
